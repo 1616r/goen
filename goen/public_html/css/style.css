@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* default */
+html{
+	color:#000;
+	background:#FFF
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{
+	margin:0;
+	padding:0
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary{
+	display:block;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0
+}
+fieldset,img{
+	border:0
+}
+address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{
+	font:inherit
+}
+del,ins{
+	text-decoration:none
+}
+li{
+	list-style:none
+}
+caption,th{
+	text-align:left
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal
+}
+q:before,q:after{
+	content:''
+}
+abbr,acronym{
+	border:0;
+	font-variant:normal
+}
+
+/* clearfix */
+.cf:before, .cf:after {
+	content:"";
+	display:table;
+}
+.cf:after {
+	clear:both;
+}
+.cf {
+	zoom:1;
+}
+
+/* COMMON  */
+body,html{
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'AxisLatinPro-Light', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+	background: #eee;
+	color: #282828;
+	line-height: 1.8;
+}
+a {
+	text-decoration: none;
+}
+img {
+	vertical-align: bottom;
+}
+.section{
+	position:relative;
+	width:100%;
+	z-index:1;
+}
+
+/* TOP START */
+/* HEADER START */
+.header{
+	position:absolute;
+	top:0px;
+	width: 100%;
+	z-index:100;
+	border-bottom:#ABABAB 1px solid;
+	padding:5px 5px 10px;
+}
+.header:after{
+	display: block;
+	clear: both;
+}
+.header ul{
+	padding:20px;
+}
+.header li:first-child{
+	float:left;
+}
+.header li{
+	float:right;
+	line-height:5px;
+}
+.header li a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 2px;
+	padding: 0 16px;
+	color: #000;
+	font-size:12px;
+}
+
+.header li a.order_button{
+	display:block;
+	background: #F93;
+	color:#FFF;
+	line-height:28px;
+	height:30px;
+	border-radius: 12px;
+	transition: all 0.3s;
+	margin: 0 0 0 12px;
+}
+.header li a.orderbutton:hover{
+	background: #F90;
+}
+.header li a.member_button{
+	display:block;
+	background: #F93;
+	color:#FFF;
+	line-height:28px;
+	height:30px;
+	border-radius: 12px;
+	transition: all 0.3s;
+	margin: 0 0 0 12px;
+}
+.header li a.hover{
+	text-decoration:underline;
+}
+/* HEADER END */
+
+/* SECTION TOP_INTRO START */
+section#top_intro{
+	width:1000px;
+	height:450px;
+	overflow:hidden;
+}
+
+.top_intro_inner{
+	width:1000px;
+	display:table;
+	position:relative;
+}
+.top_intro_inner_content{
+	display:table-cell;
+	margin:0 auto;
+	position:relative;
+	z-index:2;
+}
+.top_intro_inner_contentL{
+	top:50%;
+	left:0;
+	position:absolute;
+	float:left;
+	margin-top:-230px;
+	width:50%;
+}
+#top_intro h1{
+	background-image:url(../img/logo.png);
+	background-position:0 0;
+	background-repeat:no-repeat;
+	display:block;
+	text-indent:-9000px;
+	width:400px;
+	height:200px;
+	margin:0 0 0 0;
+}
+#top_intro h2{
+	font-size:14px;
+	margin:0 0 10px 0;
+}
+/* SECTION TOP_INTRO END */
+/* SECTION TOP_CONCEPT START */
+section#top_concept{
+	width:1000px;
+	position:relative;
+	height:450px;
+	overflow:hidden;
+	background:#EFEFEF;
+}
+/* SECTION TOP_CONCEPT END */
+
+/* SECTION TOP_PRODUCT START */
+section#top_product{
+	width:1000px;
+	position:relative;
+	height:450px;
+	overflow:hidden;
+	background:#FFFFFF;
+}
+/* SECTION TOP_PRODUCT END */
+
+/* SECTION TOP_PRICE START */
+section#top_price{
+	width:1000px;
+	position:relative;
+	height:450px;
+	overflow:hidden;
+	background:#EFEFEF;
+}
+/* SECTION TOP_PRICE END */
+
+/* SECTION TOP_COMPANY START */
+section#top_company{
+	width:1000px;
+	position:relative;
+	height:450px;
+	overflow:hidden;
+	background:#FFFFFF;
+}
+/* SECTION TOP_COMPANY END */
